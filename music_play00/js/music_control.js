@@ -106,7 +106,7 @@
 			
 			$.ajax({
 				type:'GET',
-				url:'http://www.arthurdon.top:3000/lyric?id=' + id,
+				url:'http://www.arthurdon.top:10099/lyric?id=' + id,
 				success:function(data){
 					console.log(data);
 					 $('.words-box').empty();
