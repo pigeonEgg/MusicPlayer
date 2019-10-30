@@ -1,0 +1,97 @@
+.nav,.nav00,input,button,ul,p{
+	margin: 0px;
+	padding: 0px;
+	
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:   url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568639791852&di=a8c0c087a7d44ccb591b1e514249f39a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190915%2F58fbac7f31194182ad7838d808983144.jpeg);
+	background-size: cover;
+	z-index: -1;;
+}
+
+.nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:1rem;
+	background-color: #0D6FBF;
+	text-align: center;
+	line-height: 1rem;
+}
+.nav00{
+	overflow: hidden;
+	display: inline-block;
+	border: cadetblue;
+	border-radius: 0.5rem;
+	height: .8rem;
+	width: 80%;
+}
+.nav00 .search,.nav00 button{
+	display: block;
+	
+	float: left;
+	outline: none;
+	border: none;
+	height: 100%;
+}
+.nav00 .search{
+	width: 85%;
+	font-size: 16px;
+	text-indent: 2em;
+}
+.nav00 button{
+	width: 15%;
+	background: #BCDEFA;
+}
+
+.list{
+	margin-top: 1.5rem;
+	color: #efefef;
+	background-color: rgba(95,158,160,.5);
+	border-radius: 5px;
+	
+}
+.list ul{
+	list-style: none;
+	font-size: 20px;
+}
+.list ul li{
+	border-bottom: #5F9EA0 1px solid;
+}
+.list ul li:last-child{
+	border: none;
+}
+.title {
+    padding: 0 .5rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+}
+.songNum{
+	margin-right: .5rem;
+}
+.arrow{
+	background: url(../img/arrow-right.png) no-repeat center center;
+	width: .5rem;
+	height: .5rem;
+	margin-top: .4rem;
+}
+
+
+

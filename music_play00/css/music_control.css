@@ -1,0 +1,189 @@
+html{
+	overflow: hidden;
+}
+.bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568639791852&di=a8c0c087a7d44ccb591b1e514249f39a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190915%2F58fbac7f31194182ad7838d808983144.jpeg);
+	background-size: cover;
+	z-index: -1;;
+	
+}
+
+.sn{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: calc(100% - .3rem);
+	background-color:rgba(0,0,0,.5);
+	padding: .15rem;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.sn span,.sn .sn01{
+	float: left;
+	
+}
+.sn span{
+	display: inline-block;
+	width: 2rem;
+}
+.sn .sn01{
+	width: 5rem;
+}
+.sn .sn01 p{
+	margin: 0px;
+	display: inline-block;
+}
+.box-control{	
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: calc(100% - .3rem);
+	height: 1.5rem;
+	background-color: #0D6FBF;
+	padding: .15rem;
+	
+}
+.Song_time{
+	position: fixed;
+	bottom: 1.8rem;
+	left: 0;
+	width: calc(100% - .3rem);
+	height: .5rem;
+	font-size: 18px;
+	padding: 0 .15rem;
+	color: #FFFFFF;
+	
+}
+.Song_time .songCurrent{
+	float: left;
+}
+.Song_time .songName{
+	text-align: center;
+	width: 3rem;	
+	display: inline-block;
+	margin-left:-1.5rem;
+	position: absolute;
+	left: 50%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.Song_time .songDuration{
+	float: right;
+}
+/* .avatar{
+	position: absolute;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+	top: -.6rem;
+	left: .15rem;
+	background-color: #fff;
+} */
+.progress{
+	width: 100%;
+  
+	height: .15rem;
+	background-color: #fff;
+	position: relative;
+	border-radius: .075rem;
+}
+.progress-active{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-image: linear-gradient(to right, #E8E8A8 0%, #9EE4A5 100%);
+	border-radius: 5px;
+}
+.mask{
+	position: absolute;
+	left: 0;
+	top: -4px;
+	width: .3rem;
+	height: .3rem;
+	border-radius: 50%;
+	background-color: #FFFEA1;
+	box-shadow: 0px 0px 10px 0px #fff;
+	animation: breath 1.5s linear 0s infinite alternate;
+}
+
+/* 自定义动画 */
+@keyframes breath {
+	0% {
+		box-shadow: 0px 0px 10px 0px #fff;
+	}
+
+	100% {
+		box-shadow: 0px 0px 18px 2px #fff; 
+	}
+}
+
+.layer{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: -5px;
+}
+
+.btn{
+	margin-top: 5px;
+	text-align: center;
+	
+}
+.beforeS,.St,.nextS{
+	display: inline-block;
+	
+	
+}
+.beforeS img,.St img,.nextS img{
+		width: 50px;
+		display: block;
+		margin: auto 0;
+	}
+	
+.ci{
+	display: inline-block;
+	color: #EFEFEF;
+	font-family:"黑体";
+	font-weight: 900;
+	font-size: 20px;
+	height: 100%;
+	position: absolute;
+	top: .8rem;
+	right: 1rem;
+	transform:translateZ(0);
+}
+	
+	
+	
+	
+	
+.pic{
+	position: fixed;
+	top: 15%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width:4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	border: #FFFFFF 3px solid;
+	overflow: hidden;
+	animation: rotate 5s linear infinite paused;
+}
+	@keyframes rotate{
+	from{transform: rotate(0deg)}
+	to{transform: rotate(360deg)}
+}
+.pic img{
+	width: 100%;
+}
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/song_show.css"/>
+		<link rel="stylesheet" type="text/css" href="css/music_control.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page02.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page03.css"/>
+	</head>
+	<body>
+		<div class="bg"></div>
+		
+		
+		<div class="page01" >
+		
+		<div class="nav">
+			<div class="nav00">
+				<input type="text" class="search" id="" value="请输入歌曲名" />
+				<button type="button"><img src="img/search.png" ></button>
+			</div>
+		</div>
+		
+		<div class="list">
+			<ul id="all-list">
+				<li id="list01">
+					<div class="title clearfix">
+						<div class="fl">本地歌曲</div>
+						<div class="fr clearfix">
+							<span id="songNum01" class="fl songNum">
+								1
+							</span>
+							<span class="arrow fl"></span>
+						</div>
+						
+					</div>
+				</li>
+				
+				<li>
+					<div class="title clearfix">
+						<div class="fl">歌曲收藏</div>
+						<div class="fr clearfix">
+							<span id="" class="fl songNum">
+								0
+							</span>
+							<span class="arrow fl"></span>
+						</div>
+						
+					</div>
+				</li>
+				
+				<li>
+					<div class="title clearfix">
+						<div class="fl">历史播放</div>
+						<div class="fr clearfix">
+							<span id="" class="fl songNum">
+								0
+							</span>
+							<span class="arrow fl"></span>
+						</div>
+						
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+		
+		
+		
+		
+		<div class="page02"  data-title="0" style="display: none;">
+			<div class="sn sn_page2" style="text-align: center;">
+				<p>本地歌曲</p>				
+			</div>
+			
+			<div class="song-list">
+				<ul class="currentList">
+					<!-- <li class="active">
+					   <div class="song-list-one">
+							<div class="song-list-one-img">	
+								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568660032271&di=9c3a01abddc3e29f71f0c409cbe2f6a6&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201707%2F18%2F20170718075730_jEUHs.jpeg" >
+							</div>
+							<div class="info">
+								<div class="one-text">
+									芒种
+								</div>
+								<div class="two-text">
+									雪霏岚岚
+								</div>
+							</div>
+							<div class="s-time">
+								<div class="dt">
+									03:00
+								</div>
+								<div class="ani">
+									<div class="point00">
+										
+										<div class="point01"></div>
+										
+									</div>
+								</div>
+								
+							</div>
+							
+					    </div>
+					</li>					 -->
+				</ul>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<div class="page03" style="display: none;">
+		<audio id="audio" preload="auto">
+			<!-- <source src="雪霏岚岚-芒种.mp3"> -->
+		</audio>	
+		
+		<div class="sn sn_page03">
+			<span>当前歌曲</span>
+			<div class="sn01" id="sn01">
+				<p>芒种-雪霏岚岚</p>
+			</div>
+			
+			<div class="geci">
+				<div class="words-box">
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<div class="pic">
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568660032271&di=9c3a01abddc3e29f71f0c409cbe2f6a6&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201707%2F18%2F20170718075730_jEUHs.jpeg" >
+		</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="box-control">
+			<div class="Song_time">
+				<span id="songCurrent" class="songCurrent">00:00</span>
+				<span id="songName" class="songName"></span>
+				<span id="songDuration" class="songDuration">00:00</span>
+			</div>
+			<!-- 歌曲时间 -->			
+			 <div class="progress" id="progress">
+				 <!-- 激活条 -->
+				<div class="progress-active"></div>
+				<!-- 滑块 -->
+				<div class="mask"></div>
+				<!-- 绑定事件层 -->
+				<div class="layer"></div>
+			</div>			
+			<div class="btn">
+				<div class="beforeS">
+					<img src="img/shangyixiang.png" >
+				</div>
+				<div class="St" id="St" data-play="0">
+					<img src="img/bofang.png" >
+					<img src="img/zanting.png" style="display: none;" >
+				</div>
+				<div class="nextS">
+					<img src="img/xiayixiang.png" >
+				</div>
+				<div class="ci">
+					<span>词</span>
+				</div>
+			</div>
+			</div>
+		
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/music_control.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

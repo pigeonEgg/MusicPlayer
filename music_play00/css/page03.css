@@ -1,0 +1,33 @@
+.geci{
+	position: fixed;
+	top: 47%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 90%;
+	height: 4.8rem;
+	background-color: rgba(188,222,250,.5);
+	overflow: hidden;
+	/* background-color: #5F9EA0; */
+	/* background-color: rgba(188,222,250,.5); */
+	border-radius: 1rem;
+	
+	transform:translateZ(0);
+	
+}
+.words-box{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* background-color: rgba(188,222,250,.5);
+	overflow: auto; */
+	
+	border-radius: 1rem;
+}
+.words-box p{
+	text-align: center;
+}
+.sactive{
+	color: black;
+	font-weight: 700;
+}
