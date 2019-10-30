@@ -337,7 +337,7 @@
 			
 			$.ajax({
 				type:'GET',
-				url:'http://www.arthurdon.top:10099/top/list?idx=1',
+				url:'https://www.arthurdon.top:10099/top/list?idx=1',
 				success:function(data){
 					console.log("data==>",data);
 					
